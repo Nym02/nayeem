@@ -1,19 +1,19 @@
 .header-area {
   .nav-area {
     padding: 1.5rem 0;
-    // background-color: grey;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 1fr 2fr;
     .logo {
       &-text,
       &-text:link,
       &-text:visited {
         text-decoration: none;
-        font-size: 4rem;
+        font-size: 5rem;
         font-family: $logo-font;
+        color: $color-black-1;
       }
       &-text-mod {
-        color: $color-secondary;
+        color: $color-secondary !important;
       }
     }
     .nav {
@@ -49,7 +49,7 @@
             left: 0;
             width: 0%;
             background: $color-secondary;
-            height: 30px;
+            height: 3.3rem;
             transition: all 0.4s;
           }
 
@@ -61,6 +61,38 @@
             color: $color-white-1;
           }
         }
+      }
+    }
+  }
+  .hero-section {
+    padding: 20rem 0 26rem 0;
+    // height: 90vh;
+    // background-color: grey;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .intro {
+      display: grid;
+      align-items: center;
+
+      &__greet {
+        font-size: 2rem;
+        font-family: "Cairo";
+        color: $color-grey-1;
+        margin-bottom: -18rem;
+      }
+      &__list {
+        list-style: none;
+        font-size: 2.2rem;
+        font-family: "Cairo";
+        margin-top: -13rem;
+        font-weight: 600;
+      }
+    }
+    .hero-img {
+      .img {
+      }
+      .img-hero {
+        width: 100%;
       }
     }
   }

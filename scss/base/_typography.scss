@@ -1,1 +1,9 @@
-
+.heading {
+  &-primary {
+    font-size: 7rem;
+    font-family: "Cairo";
+    &-mod {
+      color: $color-secondary;
+    }
+  }
+}

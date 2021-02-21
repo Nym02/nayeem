@@ -22,22 +22,64 @@ body {
   margin: auto;
 }
 
+.heading-primary {
+  font-size: 7rem;
+  font-family: "Cairo";
+}
+
+.heading-primary-mod {
+  color: #fa4d6a;
+}
+
+.btn {
+  font-size: 1.6rem;
+  padding: 1rem 1.5rem;
+}
+
+.btn-link, .btn-link:link, .btn-link:visited {
+  text-decoration: none;
+  color: #131313;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-resume {
+  background-color: #fa4d6a;
+  padding: 0rem 2rem;
+  font-size: 1.5rem;
+  color: #fff !important;
+  border-radius: 4rem;
+  border: 0.1rem solid transparent;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn-resume:hover {
+  background-color: #fff;
+  color: #131313 !important;
+  border: 0.1rem solid #fa4d6a;
+}
+
 .header-area .nav-area {
   padding: 1.5rem 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 2fr;
-      grid-template-columns: 2fr 2fr;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
 }
 
 .header-area .nav-area .logo-text, .header-area .nav-area .logo-text:link, .header-area .nav-area .logo-text:visited {
   text-decoration: none;
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: "Fredericka the Great", cursive;
+  color: #131313;
 }
 
 .header-area .nav-area .logo-text-mod {
-  color: #f50057;
+  color: #fa4d6a !important;
 }
 
 .header-area .nav-area .nav {
@@ -81,8 +123,8 @@ body {
   position: absolute;
   left: 0;
   width: 0%;
-  background: #f50057;
-  height: 30px;
+  background: #fa4d6a;
+  height: 3.3rem;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -93,5 +135,40 @@ body {
 
 .header-area .nav-area .nav__item-link:hover, .header-area .nav-area .nav__item-link:link:hover, .header-area .nav-area .nav__item-link:visited:hover {
   color: #fff;
+}
+
+.header-area .hero-section {
+  padding: 20rem 0 26rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.header-area .hero-section .intro {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-area .hero-section .intro__greet {
+  font-size: 2rem;
+  font-family: "Cairo";
+  color: #a09b9b;
+  margin-bottom: -18rem;
+}
+
+.header-area .hero-section .intro__list {
+  list-style: none;
+  font-size: 2.2rem;
+  font-family: "Cairo";
+  margin-top: -13rem;
+  font-weight: 600;
+}
+
+.header-area .hero-section .hero-img .img-hero {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
