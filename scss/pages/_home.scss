@@ -1,3 +1,7 @@
+// =====================================================
+//     Header area starts here
+// =====================================================
+
 .header-area {
   .nav-area {
     padding: 1.5rem 0;
@@ -71,29 +75,56 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     .intro {
-      display: grid;
-      align-items: center;
+      //   display: grid;
+      //   align-items: center;
 
       &__greet {
         font-size: 2rem;
-        font-family: "Cairo";
+        font-family: $nav-font;
         color: $color-grey-1;
-        margin-bottom: -18rem;
+        margin-bottom: -4rem;
       }
       &__list {
         list-style: none;
         font-size: 2.2rem;
-        font-family: "Cairo";
-        margin-top: -13rem;
+        font-family: $nav-font;
+        margin-top: -2rem;
         font-weight: 600;
       }
     }
     .hero-img {
-      .img {
-      }
+      //   .img {
+      //   }
       .img-hero {
         width: 100%;
       }
     }
   }
+  .arrow {
+    text-align: center;
+
+    &-down {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      margin: auto;
+      border: 1px solid $color-secondary;
+      text-align: center;
+      line-height: 40px;
+      font-size: 1.4rem;
+      margin-top: -4rem;
+      border-radius: 50%;
+      transition: all 0.4s;
+      &:hover {
+        background-color: $color-secondary;
+        color: $color-white-1;
+        border: 1px solid transparent;
+      }
+    }
+  }
 }
+
+// =====================================================
+//     Header area ends here
+// =====================================================

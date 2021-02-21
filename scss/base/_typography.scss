@@ -1,9 +1,12 @@
 .heading {
   &-primary {
-    font-size: 7rem;
+    font-size: 8rem;
     font-family: "Cairo";
-    &-mod {
+    &-inner-mod {
       color: $color-secondary;
     }
+  }
+  &-primary-mod {
+    margin-left: -0.5rem;
   }
 }
