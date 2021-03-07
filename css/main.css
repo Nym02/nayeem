@@ -79,6 +79,31 @@ body {
   border: 0.1rem solid #f50057;
 }
 
+.burger-menu {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+}
+
+.burger-menu:hover .bar1 {
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+}
+
+.burger-menu:hover .bar2 {
+  display: none;
+}
+
+.burger-menu .bar {
+  width: 3rem;
+  margin-bottom: 0.7rem;
+  height: 0.3rem;
+  background-color: #131313;
+}
+
+.burger-menu .bar2 {
+  width: 2rem !important;
+}
+
 .header-area .nav-area {
   padding: 1.5rem 0;
   display: -ms-grid;

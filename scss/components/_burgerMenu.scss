@@ -1,0 +1,26 @@
+.burger-menu {
+  margin-top: 1.5rem;
+  margin-left: 2rem;
+  //   display: none;
+
+  &:hover .bar1 {
+    transform: rotateX(-45deg);
+  }
+  &:hover .bar2 {
+    display: none;
+  }
+  .bar {
+    width: 3rem;
+    margin-bottom: 0.7rem;
+    height: 0.3rem;
+    background-color: $color-black-1;
+    &1 {
+      &:hover {
+      }
+    }
+
+    &2 {
+      width: 2rem !important;
+    }
+  }
+}
