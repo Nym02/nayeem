@@ -1,10 +1,13 @@
 .sidemenu {
-  position: absolute;
+  position: fixed;
   background-color: $color-black-1;
   top: 0;
-  right: 0;
+  right: -32rem;
   color: white;
   height: 100vh;
+  //   visibility: hidden;
+  z-index: 1;
+  transition: all 0.4s;
   //   padding: 0 2rem;
   &__close-btn {
     position: relative;
@@ -20,26 +23,26 @@
     font-size: 5rem;
     position: relative;
     cursor: pointer;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 0%;
-      height: 0.5rem;
-      background: $color-secondary;
-      top: 6rem;
-      left: 0rem;
-      transition: all 0.4s;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   width: 0%;
+    //   height: 0.5rem;
+    //   background: $color-secondary;
+    //   top: 6rem;
+    //   left: 0rem;
+    //   transition: all 0.4s;
+    // }
 
-    &:hover:before {
-      width: 100%;
-    }
+    // &:hover:before {
+    //   width: 100%;
+    // }
   }
 
   .fa-times {
     position: absolute;
-    top: -1rem;
-    left: -3.4rem;
+    top: 2rem;
+    left: -1.4rem;
     font-size: 1.6rem;
     height: 3rem;
     width: 3rem;
@@ -55,14 +58,36 @@
     margin-top: 4rem;
   }
   &__item {
-    min-height: 4rem;
+    min-height: 6rem;
     padding: 0 14rem 0 2rem;
     font-size: 1.8rem;
+    border-bottom: 0.1rem solid $color-grey-2;
+    padding-top: 3.1rem;
+    position: relative;
+    transition: all 0.4s;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 0.5rem;
+      z-index: -1;
+      bottom: 0;
+      left: 0;
+      background-color: $color-secondary;
+      transition: all 0.4s;
+    }
+    &:hover::before {
+      width: 100%;
+      z-index: 1;
+    }
+    &:hover .fas {
+      color: $color-secondary;
+    }
   }
   &__link,
   &__link:link,
   &__link:visited {
-    color: white;
+    color: $color-white-1;
     text-decoration: none;
     margin-left: 1rem;
   }

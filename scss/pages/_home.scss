@@ -9,6 +9,7 @@
     grid-template-columns: 1fr 2fr;
 
     .logo {
+      margin-left: 2rem;
       &-text,
       &-text:link,
       &-text:visited {
@@ -38,12 +39,16 @@
       @include respond(tab) {
         display: none;
       }
+
       &__list {
         list-style: none;
         font-size: 1.7rem;
         font-family: $nav-font;
         font-weight: 600;
         display: inline-flex;
+        @include respond(desktop) {
+          font-size: 1.5rem;
+        }
         // display: grid;
         // grid-template-columns: repeat(5, 1fr);
       }
@@ -53,6 +58,10 @@
         z-index: 10;
         &:not(:last-child) {
           margin-right: 3rem;
+
+          @include respond(desktop) {
+            margin-right: 2rem;
+          }
         }
 
         &-link,
@@ -92,6 +101,7 @@
     .intro {
       //   display: grid;
       //   align-items: center;
+      margin-left: 2rem;
 
       &__greet {
         font-size: 2rem;

@@ -6,19 +6,23 @@
   top: 1.5rem;
   transition: all 0.4s ease-out;
   cursor: pointer;
-  //   display: none;
+  display: none;
 
-  &:hover .bar1 {
-    transform: rotate(-45deg) translate(-10px, 10px);
+  @include respond(tab) {
+    display: block;
   }
-  &:hover .bar2 {
-    // display: none;
-    transform: translateX(-10px);
-    opacity: 0;
-  }
-  &:hover .bar3 {
-    transform: rotate(45deg) translate(-3px, -4px);
-  }
+
+  // .bar11 {
+  //   transform: rotate(-45deg) translate(-10px, 10px);
+  // }
+  // .bar22 {
+  //   // display: none;
+  //   transform: translateX(-10px);
+  //   opacity: 0;
+  // }
+  // .bar33 {
+  //   transform: rotate(45deg) translate(-3px, -4px);
+  // }
   .bar {
     width: 3rem;
     margin-bottom: 0.7rem;
