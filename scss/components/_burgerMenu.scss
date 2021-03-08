@@ -1,19 +1,30 @@
 .burger-menu {
   margin-top: 1.5rem;
   margin-left: 2rem;
+  position: absolute;
+  right: 6rem;
+  top: 1.5rem;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
   //   display: none;
 
   &:hover .bar1 {
-    transform: rotateX(-45deg);
+    transform: rotate(-45deg) translate(-10px, 10px);
   }
   &:hover .bar2 {
-    display: none;
+    // display: none;
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+  &:hover .bar3 {
+    transform: rotate(45deg) translate(-3px, -4px);
   }
   .bar {
     width: 3rem;
     margin-bottom: 0.7rem;
     height: 0.3rem;
     background-color: $color-black-1;
+    transition: all 0.4s;
     &1 {
       &:hover {
       }
@@ -21,6 +32,7 @@
 
     &2 {
       width: 2rem !important;
+      background-color: $color-secondary;
     }
   }
 }

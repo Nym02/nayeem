@@ -7,6 +7,7 @@
     padding: 1.5rem 0;
     display: grid;
     grid-template-columns: 1fr 2fr;
+
     .logo {
       &-text,
       &-text:link,
@@ -15,14 +16,28 @@
         font-size: 5rem;
         font-family: $logo-font;
         color: $color-black-1;
+        transition: all 0.4s ease-out;
+
+        &:hover {
+          color: $color-secondary;
+        }
+        &:hover .logo-text-mod {
+          color: $color-black-1 !important;
+        }
       }
+
       &-text-mod {
         color: $color-secondary !important;
+        transition: all 0.4s ease-out;
       }
     }
     .nav {
       display: grid;
       align-items: center;
+
+      @include respond(tab) {
+        display: none;
+      }
       &__list {
         list-style: none;
         font-size: 1.7rem;

@@ -82,15 +82,28 @@ body {
 .burger-menu {
   margin-top: 1.5rem;
   margin-left: 2rem;
+  position: absolute;
+  right: 6rem;
+  top: 1.5rem;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+  cursor: pointer;
 }
 
 .burger-menu:hover .bar1 {
-  -webkit-transform: rotateX(-45deg);
-          transform: rotateX(-45deg);
+  -webkit-transform: rotate(-45deg) translate(-10px, 10px);
+          transform: rotate(-45deg) translate(-10px, 10px);
 }
 
 .burger-menu:hover .bar2 {
-  display: none;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  opacity: 0;
+}
+
+.burger-menu:hover .bar3 {
+  -webkit-transform: rotate(45deg) translate(-3px, -4px);
+          transform: rotate(45deg) translate(-3px, -4px);
 }
 
 .burger-menu .bar {
@@ -98,10 +111,84 @@ body {
   margin-bottom: 0.7rem;
   height: 0.3rem;
   background-color: #131313;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .burger-menu .bar2 {
   width: 2rem !important;
+  background-color: #f50057;
+}
+
+.sidemenu {
+  position: absolute;
+  background-color: #131313;
+  top: 0;
+  right: 0;
+  color: white;
+  height: 100vh;
+}
+
+.sidemenu__close-btn {
+  position: relative;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.sidemenu__logo, .sidemenu__logo:link, .sidemenu__visited {
+  text-decoration: none;
+  color: #fff;
+  font-family: "Fredericka the Great", cursive;
+  font-size: 5rem;
+  position: relative;
+  cursor: pointer;
+}
+
+.sidemenu__logo::before, .sidemenu__logo:link::before, .sidemenu__visited::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0.5rem;
+  background: #f50057;
+  top: 6rem;
+  left: 0rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.sidemenu__logo:hover:before, .sidemenu__logo:link:hover:before, .sidemenu__visited:hover:before {
+  width: 100%;
+}
+
+.sidemenu .fa-times {
+  position: absolute;
+  top: -1rem;
+  left: -3.4rem;
+  font-size: 1.6rem;
+  height: 3rem;
+  width: 3rem;
+  text-align: center;
+  background: #f50057;
+  line-height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.sidemenu__list {
+  list-style: none;
+  margin-top: 4rem;
+}
+
+.sidemenu__item {
+  min-height: 4rem;
+  padding: 0 14rem 0 2rem;
+  font-size: 1.8rem;
+}
+
+.sidemenu__link, .sidemenu__link:link, .sidemenu__link:visited {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
 }
 
 .header-area .nav-area {
@@ -117,10 +204,22 @@ body {
   font-size: 5rem;
   font-family: "Fredericka the Great", cursive;
   color: #131313;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.header-area .nav-area .logo-text:hover, .header-area .nav-area .logo-text:link:hover, .header-area .nav-area .logo-text:visited:hover {
+  color: #f50057;
+}
+
+.header-area .nav-area .logo-text:hover .logo-text-mod, .header-area .nav-area .logo-text:link:hover .logo-text-mod, .header-area .nav-area .logo-text:visited:hover .logo-text-mod {
+  color: #131313 !important;
 }
 
 .header-area .nav-area .logo-text-mod {
   color: #f50057 !important;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
 }
 
 .header-area .nav-area .nav {
@@ -129,6 +228,12 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (max-width: 991px) {
+  .header-area .nav-area .nav {
+    display: none;
+  }
 }
 
 .header-area .nav-area .nav__list {

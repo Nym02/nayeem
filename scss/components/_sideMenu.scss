@@ -1,0 +1,69 @@
+.sidemenu {
+  position: absolute;
+  background-color: $color-black-1;
+  top: 0;
+  right: 0;
+  color: white;
+  height: 100vh;
+  //   padding: 0 2rem;
+  &__close-btn {
+    position: relative;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  &__logo,
+  &__logo:link,
+  &__visited {
+    text-decoration: none;
+    color: $color-white-1;
+    font-family: $logo-font;
+    font-size: 5rem;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 0.5rem;
+      background: $color-secondary;
+      top: 6rem;
+      left: 0rem;
+      transition: all 0.4s;
+    }
+
+    &:hover:before {
+      width: 100%;
+    }
+  }
+
+  .fa-times {
+    position: absolute;
+    top: -1rem;
+    left: -3.4rem;
+    font-size: 1.6rem;
+    height: 3rem;
+    width: 3rem;
+    text-align: center;
+    background: $color-secondary;
+    line-height: 3rem;
+    border-radius: 50%;
+
+    cursor: pointer;
+  }
+  &__list {
+    list-style: none;
+    margin-top: 4rem;
+  }
+  &__item {
+    min-height: 4rem;
+    padding: 0 14rem 0 2rem;
+    font-size: 1.8rem;
+  }
+  &__link,
+  &__link:link,
+  &__link:visited {
+    color: white;
+    text-decoration: none;
+    margin-left: 1rem;
+  }
+}
