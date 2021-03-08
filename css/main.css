@@ -1,5 +1,56 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@-webkit-keyframes leftToRight {
+  from {
+    -webkit-transform: translateX(-20rem);
+            transform: translateX(-20rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes leftToRight {
+  from {
+    -webkit-transform: translateX(-20rem);
+            transform: translateX(-20rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes rightToLeft {
+  from {
+    -webkit-transform: translateX(20rem);
+            transform: translateX(20rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes rightToLeft {
+  from {
+    -webkit-transform: translateX(20rem);
+            transform: translateX(20rem);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -314,6 +365,8 @@ body {
 
 .header-area .hero-section .intro {
   margin-left: 2rem;
+  -webkit-animation: leftToRight 0.7s ease-out;
+          animation: leftToRight 0.7s ease-out;
 }
 
 .header-area .hero-section .intro__greet {
@@ -329,6 +382,11 @@ body {
   font-family: "Cairo", sans-serif;
   margin-top: -2rem;
   font-weight: 600;
+}
+
+.header-area .hero-section .hero-img {
+  -webkit-animation: rightToLeft 0.7s ease-out;
+          animation: rightToLeft 0.7s ease-out;
 }
 
 .header-area .hero-section .hero-img .img-hero {
@@ -359,5 +417,34 @@ body {
   background-color: #f50057;
   color: #fff;
   border: 1px solid transparent;
+}
+
+.section-about {
+  padding: 10rem 0;
+}
+
+.section-about .about {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1rem;
+}
+
+.section-about .about__info .btn-group .btn-about {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.6rem;
+  border: 0.1rem solid transparent;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.section-about .about__info .btn-group .btn-active-about {
+  background-color: #f50057;
+  color: #fff;
+}
+
+.section-about .about__img-mod {
+  width: 75%;
 }
 /*# sourceMappingURL=main.css.map */

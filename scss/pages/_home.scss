@@ -102,6 +102,7 @@
       //   display: grid;
       //   align-items: center;
       margin-left: 2rem;
+      animation: leftToRight 0.7s ease-out;
 
       &__greet {
         font-size: 2rem;
@@ -118,8 +119,7 @@
       }
     }
     .hero-img {
-      //   .img {
-      //   }
+      animation: rightToLeft 0.7s ease-out;
       .img-hero {
         width: 100%;
       }

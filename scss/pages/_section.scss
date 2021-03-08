@@ -1,0 +1,35 @@
+.section-about {
+  padding: 10rem 0;
+
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+    &__info {
+      .btn-group {
+        .btn-about {
+          padding: 0.8rem 1.5rem;
+          font-size: 1.6rem;
+          border: 0.1rem solid transparent;
+          border-radius: 1rem;
+          cursor: pointer;
+        }
+        .btn-active-about {
+          background-color: $color-secondary;
+          color: $color-white-1;
+        }
+        &-aboutme {
+        }
+        &-skill {
+        }
+        &-experience {
+        }
+      }
+    }
+    &__img {
+      &-mod {
+        width: 75%;
+      }
+    }
+  }
+}

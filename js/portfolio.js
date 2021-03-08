@@ -22,3 +22,24 @@ closeBtn.addEventListener("click", () => {
 });
 
 const removeSideMenu = () => (sideMenu.style.right = "-32rem");
+
+// about me tabs
+
+const btn = document.querySelectorAll(".btn-about");
+const btnTabs = document.querySelectorAll(".btn-about-info");
+
+const activeTab = (index) => {
+  btn.forEach((n) => {
+    n.classList.remove("btn-active-about");
+  });
+
+  btn[index].classList.add("btn-active-about");
+  btn[index].style.outline = "none";
+
+  btnTabs.forEach((info) => {
+    info.style.display = "none";
+  });
+
+  btnTabs[index].style.display = "block";
+};
+activeTab(0);
