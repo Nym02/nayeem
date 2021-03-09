@@ -1,28 +1,68 @@
 .section-about {
   padding: 10rem 0;
 
+  .tab-content {
+    opacity: 0;
+    transition: all 0.4s;
+  }
+  .animate-tab {
+    opacity: 1;
+  }
+
   .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 1rem;
+    transition: all 0.4s;
+
     &__info {
-      .btn-group {
-        .btn-about {
-          padding: 0.8rem 1.5rem;
-          font-size: 1.6rem;
-          border: 0.1rem solid transparent;
-          border-radius: 1rem;
-          cursor: pointer;
+      margin-left: 2rem;
+      display: grid;
+      align-items: center;
+
+      .aboutme {
+        margin-top: -25rem;
+        .btn-about-info {
+          margin-top: 4rem;
         }
-        .btn-active-about {
-          background-color: $color-secondary;
-          color: $color-white-1;
+
+        &__intro {
+          font-size: 1.4rem;
+          font-family: $body-font;
+          margin-top: 4rem;
+          padding-right: 13rem;
+          text-align: justify;
         }
-        &-aboutme {
+      }
+
+      .skill__info {
+        .skills {
+          margin-top: 4rem;
+          width: 50%;
+          .badge {
+            color: $color-white-1;
+            background-color: $color-secondary;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            margin-right: 1rem;
+            margin-bottom: 2rem;
+            display: inline-block;
+          }
         }
-        &-skill {
-        }
-        &-experience {
+      }
+      .experience__info {
+        .experience {
+          &__post {
+            font-size: 1.6rem;
+          }
+          &__org {
+            font-size: 1.6rem;
+            font-weight: 400;
+            margin: 1rem 0;
+          }
+          &__duration {
+            font-size: 1.4rem;
+          }
         }
       }
     }

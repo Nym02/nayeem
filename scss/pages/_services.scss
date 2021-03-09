@@ -1,0 +1,48 @@
+.section-services {
+  padding: 10rem 0;
+  background-color: $color-grey-3;
+}
+.services__header {
+  text-align: center;
+}
+.service-carousel {
+  margin-top: 2rem;
+}
+.service-1 {
+  background-color: $color-white-1;
+  padding: 3rem 2rem;
+  margin-right: 2rem;
+  .service-icon {
+    .fa-file-code {
+      background: $color-secondary;
+      padding: 1rem 1.5rem;
+      font-size: 4.6rem;
+      color: $color-white-1;
+      margin-bottom: 2rem;
+    }
+  }
+  .service-description {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  .service-link,
+  .service-link:link,
+  .service-link:visited {
+    text-decoration: none;
+    color: $color-secondary;
+    font-size: 1.6rem;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+  .service-link {
+    transition: all 0.4s;
+    &-icon {
+      font-size: 1.2rem;
+    }
+    &:hover {
+      color: $color-white-1;
+      background-color: $color-secondary;
+      transform: translateY(-2px);
+    }
+  }
+}

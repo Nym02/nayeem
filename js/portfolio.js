@@ -38,8 +38,26 @@ const activeTab = (index) => {
 
   btnTabs.forEach((info) => {
     info.style.display = "none";
+    // info.style.opacity = "0";
   });
 
+  // if (index > 0 && index < 2) {
+  //   btnTabs[index].style.marginTop = "-24rem";
+  // } else if (index == 2) {
+  //   btnTabs[index].style.marginTop = "-28rem";
+  // }
+  // btnTabs[index].style.opacity = "1";
   btnTabs[index].style.display = "block";
+  btnTabs[index].style.transition = "all .4s";
 };
 activeTab(0);
+
+// carousel
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    autoplay: true,
+    dots: true,
+  });
+});

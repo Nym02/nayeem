@@ -5,10 +5,9 @@
   right: -32rem;
   color: white;
   height: 100vh;
-  //   visibility: hidden;
+  font-family: $nav-font;
   z-index: 1;
   transition: all 0.4s;
-  //   padding: 0 2rem;
   &__close-btn {
     position: relative;
     text-align: center;
