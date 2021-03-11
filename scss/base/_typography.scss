@@ -41,4 +41,15 @@
     font-size: 1.6rem;
     color: $color-white-1;
   }
+  &-contact {
+    font-size: 4rem;
+    font-family: $body-font;
+    font-weight: bold;
+  }
+  &-contact-right-email {
+    font-size: 1.7rem;
+  }
+  &-footer {
+    font-size: 3rem;
+  }
 }

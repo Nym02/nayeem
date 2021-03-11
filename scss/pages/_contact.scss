@@ -1,0 +1,92 @@
+.section-contact {
+  padding: 10rem 0;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+  &-left {
+    display: grid;
+    align-items: center;
+    &-img {
+      width: 100%;
+    }
+  }
+  &-right {
+    &-header {
+      margin-bottom: 2rem;
+    }
+    &-info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      &-email:not(:last-child) {
+        margin-right: 5rem;
+      }
+      &-email-address {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  &-form {
+    margin-top: 3rem;
+    &-mod {
+    }
+    &-name {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      border: 0.1rem solid $color-grey-2;
+      font-style: $nav-font;
+      transition: all 0.4s;
+      &:focus {
+        border: 0.1rem solid $color-secondary;
+      }
+    }
+    &-phone {
+      width: 100%;
+      padding: 1rem 1.5rem;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      border: 0.1rem solid $color-grey-2;
+      font-style: $nav-font;
+      transition: all 0.4s;
+      &:focus {
+        border: 0.1rem solid $color-secondary;
+      }
+    }
+    &-email {
+      display: block;
+      width: 100%;
+      padding: 1rem 1.5rem;
+      font-size: 1.6rem;
+      margin-bottom: 2rem;
+      border: 0.1rem solid $color-grey-2;
+      font-style: $nav-font;
+      transition: all 0.4s;
+      &:focus {
+        border: 0.1rem solid $color-secondary;
+      }
+    }
+  }
+  .social-media {
+    margin-top: 4rem;
+    &-handle {
+      &-link,
+      &-link:link,
+      &-link:visited {
+        text-decoration: none;
+        color: $color-black-1;
+        font-size: 3rem;
+        display: inline-block;
+        margin-right: 3rem;
+        margin-top: 1rem;
+        transition: all 0.4s;
+      }
+      &-link:hover {
+        color: $color-secondary;
+      }
+    }
+  }
+}

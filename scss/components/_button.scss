@@ -2,7 +2,7 @@
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
   background-color: $color-secondary;
-  border-radius: 4rem;
+  border-radius: 1rem;
   border: 0.1rem solid transparent;
   color: $color-white-1 !important;
   transition: all 0.4s;
@@ -33,6 +33,31 @@
       background-color: $color-white-1;
       color: $color-black-1 !important;
       border: 0.1rem solid $color-secondary;
+    }
+  }
+  &-all-works {
+    text-align: center;
+  }
+  &-view-all-works,
+  &-view-all-works:link,
+  &-view-all-works:visited {
+    margin-top: 4rem;
+    display: inline-block;
+    text-decoration: none;
+    border-radius: 1rem !important;
+
+    transition: all 0.4s;
+  }
+  &-view-all-works:hover {
+    transform: translateY(-0.3rem);
+    box-shadow: 1px 4px 20px 0px black;
+  }
+  &-contact-submit {
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-0.3rem);
+      box-shadow: 1px 4px 10px 0px black;
     }
   }
 }

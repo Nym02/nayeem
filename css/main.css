@@ -124,6 +124,20 @@ body {
   color: #fff;
 }
 
+.heading-contact {
+  font-size: 4rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+
+.heading-contact-right-email {
+  font-size: 1.7rem;
+}
+
+.heading-footer {
+  font-size: 3rem;
+}
+
 .marginTop4 {
   margin-top: 4rem;
 }
@@ -132,7 +146,7 @@ body {
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
   background-color: #f50057;
-  border-radius: 4rem;
+  border-radius: 1rem;
   border: 0.1rem solid transparent;
   color: #fff !important;
   -webkit-transition: all 0.4s;
@@ -169,6 +183,37 @@ body {
   background-color: #fff;
   color: #131313 !important;
   border: 0.1rem solid #f50057;
+}
+
+.btn-all-works {
+  text-align: center;
+}
+
+.btn-view-all-works, .btn-view-all-works:link, .btn-view-all-works:visited {
+  margin-top: 4rem;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 1rem !important;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.btn-view-all-works:hover {
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  -webkit-box-shadow: 1px 4px 20px 0px black;
+          box-shadow: 1px 4px 20px 0px black;
+}
+
+.btn-contact-submit {
+  cursor: pointer;
+}
+
+.btn-contact-submit:hover {
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+  -webkit-box-shadow: 1px 4px 10px 0px black;
+          box-shadow: 1px 4px 10px 0px black;
 }
 
 .btn-group .btn-about {
@@ -625,6 +670,7 @@ body {
 
 .section-portfolio {
   padding: 10rem 0;
+  border-bottom: 0.5rem dotted #f50057;
 }
 
 .work {
@@ -666,5 +712,198 @@ body {
 .work-1:hover .work-1-info {
   opacity: 1;
   z-index: 4;
+}
+
+.section-contact {
+  padding: 10rem 0;
+}
+
+.contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5rem;
+}
+
+.contact-left {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact-left-img {
+  width: 100%;
+}
+
+.contact-right-header {
+  margin-bottom: 2rem;
+}
+
+.contact-right-info {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.contact-right-info-email:not(:last-child) {
+  margin-right: 5rem;
+}
+
+.contact-right-info-email-address {
+  font-size: 1.6rem;
+}
+
+.contact-form {
+  margin-top: 3rem;
+}
+
+.contact-form-name {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid #252323;
+  font-style: "Cairo", sans-serif;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-form-name:focus {
+  border: 0.1rem solid #f50057;
+}
+
+.contact-form-phone {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid #252323;
+  font-style: "Cairo", sans-serif;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-form-phone:focus {
+  border: 0.1rem solid #f50057;
+}
+
+.contact-form-email {
+  display: block;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+  border: 0.1rem solid #252323;
+  font-style: "Cairo", sans-serif;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-form-email:focus {
+  border: 0.1rem solid #f50057;
+}
+
+.contact .social-media {
+  margin-top: 4rem;
+}
+
+.contact .social-media-handle-link, .contact .social-media-handle-link:link, .contact .social-media-handle-link:visited {
+  text-decoration: none;
+  color: #131313;
+  font-size: 3rem;
+  display: inline-block;
+  margin-right: 3rem;
+  margin-top: 1rem;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact .social-media-handle-link:hover {
+  color: #f50057;
+}
+
+.footer-area {
+  padding: 10rem 0;
+  background-color: #131313;
+}
+
+.footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1rem;
+}
+
+.footer-left {
+  color: #fff;
+}
+
+.footer-left-logo-text, .footer-left-logo-text:link, .footer-left-logo-text:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 5rem;
+  font-family: "Fredericka the Great", cursive;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.footer-left-logo-text:hover {
+  color: #f50057;
+}
+
+.footer-left-description {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 300;
+  text-align: justify;
+}
+
+.footer-middle {
+  margin-left: 5rem;
+  color: #fff;
+}
+
+.footer-middle .service-list {
+  list-style: none;
+  margin-top: 3rem;
+}
+
+.footer-middle .service-item {
+  margin-bottom: 1rem;
+  border-bottom: 0.1rem solid #f50057;
+}
+
+.footer-middle .service-link,
+.footer-middle .service-link:link,
+.footer-middle .service-link:visited {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.6rem;
+  font-family: "Cairo", sans-serif;
+}
+
+.footer-right {
+  color: #fff;
+  margin-left: 5rem;
+}
+
+.footer-right-phone {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+
+.footer-right-phone-icon .fa-phone-square-alt {
+  margin-right: 2rem;
+  color: #f50057;
+}
+
+.footer-right-phone-icon .fa-envelope {
+  margin-right: 2rem;
+  color: #f50057;
 }
 /*# sourceMappingURL=main.css.map */
