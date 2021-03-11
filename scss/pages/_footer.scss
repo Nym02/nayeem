@@ -6,6 +6,11 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
+
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+    margin: 4rem;
+  }
   &-left {
     color: $color-white-1;
     &-logo {
@@ -32,6 +37,9 @@
   &-middle {
     margin-left: 5rem;
     color: $color-white-1;
+    @include respond(phone) {
+      margin-left: 0;
+    }
     .service-list {
       list-style: none;
       margin-top: 3rem;
@@ -53,6 +61,10 @@
   &-right {
     color: $color-white-1;
     margin-left: 5rem;
+
+    @include respond(phone) {
+      margin-left: 0;
+    }
 
     &-phone {
       margin-top: 3rem;

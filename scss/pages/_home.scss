@@ -100,17 +100,32 @@
     // background-color: grey;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    @include respond(phone) {
+      grid-template-columns: 1fr;
+    }
     .intro {
       //   display: grid;
       //   align-items: center;
       margin-left: 2rem;
       animation: leftToRight 0.7s ease-out;
+      @include respond(tab) {
+        margin-left: 6rem;
+      }
+      @include respond(phone) {
+        text-align: center;
+      }
+      @include respond(xsPhone) {
+        margin-left: 0;
+      }
 
       &__greet {
         font-size: 2rem;
         font-family: $nav-font;
         color: $color-grey-1;
         margin-bottom: -4rem;
+        @include respond(tab) {
+          margin-bottom: -3rem;
+        }
       }
       &__list {
         list-style: none;
@@ -122,6 +137,9 @@
     }
     .hero-img {
       animation: rightToLeft 0.7s ease-out;
+      @include respond(phone) {
+        // grid-row: 1;
+      }
       .img-hero {
         width: 100%;
       }

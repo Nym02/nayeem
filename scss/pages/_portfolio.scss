@@ -8,6 +8,15 @@
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   margin-top: 4rem;
+  @include respond(tab) {
+    margin: 3rem;
+  }
+  @include respond(phone) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @include respond(xsPhone) {
+    grid-template-columns: repeat(1, 1fr);
+  }
   &-1 {
     position: relative;
 
@@ -24,6 +33,9 @@
       width: 100%;
       &-mod {
         transform: translate(0%, 69%);
+        @include respond(tab) {
+          transform: translate(-7%, 36%);
+        }
       }
     }
     &-img {

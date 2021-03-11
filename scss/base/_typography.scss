@@ -2,6 +2,13 @@
   &-primary {
     font-size: 8rem;
     font-family: "Cairo";
+
+    @include respond(tab) {
+      font-size: 6rem;
+    }
+    @include respond(phone) {
+      // font-size: 4rem;
+    }
     &-inner-mod {
       color: $color-secondary;
     }
@@ -12,6 +19,10 @@
   &__aboutme {
     font-size: 4rem;
     position: relative;
+    @include respond(tab) {
+      font-size: 3rem;
+      // margin-top: 30rem;
+    }
     &::after {
       content: "";
       position: absolute;
@@ -20,6 +31,9 @@
       background-color: $color-secondary;
       top: 7rem;
       left: 0rem;
+      @include respond(phone) {
+        display: none;
+      }
     }
   }
 
@@ -31,6 +45,16 @@
   &__services {
     font-size: 4rem;
     padding: 0 22rem;
+
+    @include respond(tab) {
+      font-size: 3rem;
+      padding: 0 15rem;
+      margin-bottom: 4rem;
+    }
+    @include respond(xsPhone) {
+      font-size: 2rem;
+      padding: 0 4rem;
+    }
   }
   &-service-1 {
     font-size: 2.6rem;

@@ -12,6 +12,10 @@
   background-color: $color-white-1;
   padding: 3rem 2rem;
   margin-right: 2rem;
+  @include respond(tab) {
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
   .service-icon {
     .fa-file-code {
       background: $color-secondary;

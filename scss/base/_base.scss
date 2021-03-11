@@ -10,6 +10,15 @@
 
 html {
   font-size: 62.5%;
+  @include respond(tab) {
+    font-size: 60%;
+  }
+  @include respond(phone) {
+    font-size: 55%;
+  }
+  @include respond(xsPhone) {
+    font-size: 50%;
+  }
 }
 
 body {

@@ -6,6 +6,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 5rem;
+  @include respond(phone) {
+    grid-template-columns: repeat(1, 1fr);
+  }
   &-left {
     display: grid;
     align-items: center;
@@ -14,14 +17,28 @@
     }
   }
   &-right {
+    @include respond(phone) {
+      text-align: -webkit-center;
+    }
     &-header {
       margin-bottom: 2rem;
     }
     &-info {
       display: grid;
       grid-template-columns: 1fr 1fr;
+      @include respond(tab) {
+        grid-template-columns: 1fr;
+      }
+      &-email {
+        @include respond(tab) {
+          margin-top: 2rem;
+        }
+      }
       &-email:not(:last-child) {
         margin-right: 5rem;
+        @include respond(phone) {
+          margin-right: 0rem;
+        }
       }
       &-email-address {
         font-size: 1.6rem;
@@ -43,6 +60,9 @@
       &:focus {
         border: 0.1rem solid $color-secondary;
       }
+      @include respond(tab) {
+        width: 80%;
+      }
     }
     &-phone {
       width: 100%;
@@ -54,6 +74,9 @@
       transition: all 0.4s;
       &:focus {
         border: 0.1rem solid $color-secondary;
+      }
+      @include respond(tab) {
+        width: 80%;
       }
     }
     &-email {
@@ -67,6 +90,9 @@
       transition: all 0.4s;
       &:focus {
         border: 0.1rem solid $color-secondary;
+      }
+      @include respond(tab) {
+        width: 80%;
       }
     }
   }
@@ -83,6 +109,10 @@
         margin-right: 3rem;
         margin-top: 1rem;
         transition: all 0.4s;
+        @include respond(phone) {
+          margin-right: 0rem;
+          margin-left: 1rem;
+        }
       }
       &-link:hover {
         color: $color-secondary;
