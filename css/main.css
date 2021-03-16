@@ -104,7 +104,7 @@ body {
 }
 
 .heading-primary-inner-mod {
-  color: #f50057;
+  color: #3790b5;
 }
 
 .heading-primary-mod {
@@ -127,7 +127,7 @@ body {
   position: absolute;
   width: 4rem;
   height: 0.5rem;
-  background-color: #f50057;
+  background-color: #3790b5;
   top: 7rem;
   left: 0rem;
 }
@@ -140,7 +140,7 @@ body {
 
 .heading__service-small {
   font-size: 1.5rem;
-  color: #f50057;
+  color: #3790b5;
   margin-bottom: 1rem;
 }
 
@@ -167,7 +167,7 @@ body {
 .heading-service-1 {
   font-size: 2.6rem;
   margin: 1rem 0;
-  color: #f50057;
+  color: #3790b5;
 }
 
 .heading-work-1 {
@@ -196,7 +196,7 @@ body {
 .btn {
   font-size: 1.6rem;
   padding: 1rem 1.5rem;
-  background-color: #f50057;
+  background-color: #3790b5;
   border-radius: 1rem;
   border: 0.1rem solid transparent;
   color: #fff !important;
@@ -222,7 +222,7 @@ body {
 .btn-resume:hover {
   background-color: #fff;
   color: #131313 !important;
-  border: 0.1rem solid #f50057;
+  border: 0.1rem solid #3790b5;
 }
 
 .btn-viewWorks {
@@ -233,7 +233,7 @@ body {
 .btn-viewWorks:hover {
   background-color: #fff;
   color: #131313 !important;
-  border: 0.1rem solid #f50057;
+  border: 0.1rem solid #3790b5;
 }
 
 .btn-all-works {
@@ -280,7 +280,7 @@ body {
 }
 
 .btn-group .btn-active-about {
-  background-color: #f50057;
+  background-color: #3790b5;
   color: #fff;
 }
 
@@ -313,7 +313,7 @@ body {
 
 .burger-menu .bar2 {
   width: 2rem !important;
-  background-color: #f50057;
+  background-color: #3790b5;
 }
 
 .sidemenu {
@@ -352,7 +352,7 @@ body {
   height: 3rem;
   width: 3rem;
   text-align: center;
-  background: #f50057;
+  background: #3790b5;
   line-height: 3rem;
   border-radius: 50%;
   cursor: pointer;
@@ -382,7 +382,7 @@ body {
   z-index: -1;
   bottom: 0;
   left: 0;
-  background-color: #f50057;
+  background-color: #3790b5;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
@@ -393,7 +393,7 @@ body {
 }
 
 .sidemenu__item:hover .fas {
-  color: #f50057;
+  color: #3790b5;
 }
 
 .sidemenu__link, .sidemenu__link:link, .sidemenu__link:visited {
@@ -429,7 +429,7 @@ body {
 }
 
 .header-area .nav-area .logo-text:hover, .header-area .nav-area .logo-text:link:hover, .header-area .nav-area .logo-text:visited:hover {
-  color: #f50057;
+  color: #3790b5;
 }
 
 .header-area .nav-area .logo-text:hover .logo-text-mod, .header-area .nav-area .logo-text:link:hover .logo-text-mod, .header-area .nav-area .logo-text:visited:hover .logo-text-mod {
@@ -437,7 +437,7 @@ body {
 }
 
 .header-area .nav-area .logo-text-mod {
-  color: #f50057 !important;
+  color: #3790b5 !important;
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
@@ -501,7 +501,7 @@ body {
   position: absolute;
   left: 0;
   width: 0%;
-  background: #f50057;
+  background: #3790b5;
   height: 3.3rem;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -594,7 +594,7 @@ body {
   height: 40px;
   cursor: pointer;
   margin: auto;
-  border: 1px solid #f50057;
+  border: 1px solid #3790b5;
   text-align: center;
   line-height: 40px;
   font-size: 1.4rem;
@@ -605,7 +605,7 @@ body {
 }
 
 .header-area .arrow-down:hover {
-  background-color: #f50057;
+  background-color: #3790b5;
   color: #fff;
   border: 1px solid transparent;
 }
@@ -727,7 +727,7 @@ body {
 
 .section-about .about__info .skill__info .skills .badge {
   color: #fff;
-  background-color: #f50057;
+  background-color: #3790b5;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
   margin-right: 1rem;
@@ -780,7 +780,7 @@ body {
 }
 
 .service-1 .service-icon .fa-file-code {
-  background: #f50057;
+  background: #3790b5;
   padding: 1rem 1.5rem;
   font-size: 4.6rem;
   color: #fff;
@@ -796,7 +796,7 @@ body {
 .service-1 .service-link:link,
 .service-1 .service-link:visited {
   text-decoration: none;
-  color: #f50057;
+  color: #3790b5;
   font-size: 1.6rem;
   display: inline-block;
   margin-top: 1rem;
@@ -813,14 +813,14 @@ body {
 
 .service-1 .service-link:hover {
   color: #fff;
-  background-color: #f50057;
+  background-color: #3790b5;
   -webkit-transform: translateY(-2px);
           transform: translateY(-2px);
 }
 
 .section-portfolio {
   padding: 10rem 0;
-  border-bottom: 0.5rem dotted #f50057;
+  border-bottom: 0.5rem dotted #3790b5;
 }
 
 .work {
@@ -982,7 +982,7 @@ body {
 }
 
 .contact-form-name:focus {
-  border: 0.1rem solid #f50057;
+  border: 0.1rem solid #3790b5;
 }
 
 @media (max-width: 991px) {
@@ -1003,7 +1003,7 @@ body {
 }
 
 .contact-form-phone:focus {
-  border: 0.1rem solid #f50057;
+  border: 0.1rem solid #3790b5;
 }
 
 @media (max-width: 991px) {
@@ -1025,7 +1025,7 @@ body {
 }
 
 .contact-form-email:focus {
-  border: 0.1rem solid #f50057;
+  border: 0.1rem solid #3790b5;
 }
 
 @media (max-width: 991px) {
@@ -1057,7 +1057,7 @@ body {
 }
 
 .contact .social-media-handle-link:hover {
-  color: #f50057;
+  color: #3790b5;
 }
 
 .footer-area {
@@ -1095,7 +1095,7 @@ body {
 }
 
 .footer-left-logo-text:hover {
-  color: #f50057;
+  color: #3790b5;
 }
 
 .footer-left-description {
@@ -1123,7 +1123,7 @@ body {
 
 .footer-middle .service-item {
   margin-bottom: 1rem;
-  border-bottom: 0.1rem solid #f50057;
+  border-bottom: 0.1rem solid #3790b5;
 }
 
 .footer-middle .service-link,
@@ -1153,11 +1153,11 @@ body {
 
 .footer-right-phone-icon .fa-phone-square-alt {
   margin-right: 2rem;
-  color: #f50057;
+  color: #3790b5;
 }
 
 .footer-right-phone-icon .fa-envelope {
   margin-right: 2rem;
-  color: #f50057;
+  color: #3790b5;
 }
 /*# sourceMappingURL=main.css.map */
